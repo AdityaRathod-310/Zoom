@@ -1,0 +1,101 @@
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/background.png") no-repeat center center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 2rem;
+  background-color: rgba(0, 0, 0, 0.4); /* optional for readability */
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.navMenu {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #FF9839;
+}
+
+.loginButton {
+  padding: 0.5rem 1rem;
+  background-color: #FF9839;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  text-decoration: none; /* Required for Link to remove underline */
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #e57c1f;
+}
+
+.landingMain {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.landingText h1 {
+  font-size: 3rem;
+  max-width: 600px;
+}
+
+.landingText p {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.highlight {
+  color: #FF9839;
+}
+
+.landingImage img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .landingMain {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .landingImage {
+    margin-top: 2rem;
+  }
+
+  .navMenu {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}

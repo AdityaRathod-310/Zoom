@@ -1,0 +1,102 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e7d32;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navBar h2 {
+  margin: 0;
+}
+
+.navBar p {
+  margin: 0;
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+
+.navBar button {
+  margin-left: 1rem;
+  color: white;
+  border-color: white;
+}
+
+/* Meet Container */
+.meetContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Left Panel */
+.leftPanel {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+}
+
+.leftPanel h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #1b5e20;
+}
+
+.leftPanel .MuiTextField-root {
+  background-color: white;
+}
+
+.leftPanel button {
+  background-color: #43a047;
+  color: white;
+}
+
+.leftPanel button:hover {
+  background-color: #388e3c;
+}
+
+/* Right Panel */
+.rightPanel {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.rightPanel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .meetContainer {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navBar div:last-child {
+    margin-top: 1rem;
+  }
+}
